@@ -25,15 +25,15 @@ class ButtonListener {
 		?string $next,
 		DataContainer $dc
 	): string {
-		if($row['type'] === 'folder') {
-			return sprintf(
-				'<a href="%s" title="%s"%s>%s</a> ',
-				Backend::addToUrl($href . '&amp;id=' . $row['id']),
-				StringUtil::specialchars($title),
-				$attributes,
-				Image::getHtml($icon, $label)
-			);
+		if($row['type'] !== 'folder') {
+			return '';
 		}
-		return '';
+		return sprintf(
+			'<a href="%s" title="%s"%s>%s</a> ',
+			Backend::addToUrl($href . '&amp;id=' . $row['id']),
+			StringUtil::specialchars($title),
+			$attributes,
+			Image::getHtml($icon, $label)
+		);
 	}
 }

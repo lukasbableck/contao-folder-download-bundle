@@ -3,6 +3,7 @@
 namespace Lukasbableck\ContaoFolderDownloadBundle\EventListener\DataContainer;
 
 use Contao\Backend;
+use Contao\BackendUser;
 use Contao\CoreBundle\DependencyInjection\Attribute\AsHook;
 use Contao\CoreBundle\Exception\ResponseException;
 use Contao\FilesModel;
@@ -18,16 +19,10 @@ class AddOperationsListener extends Backend {
 			return;
 		}
 
-		$GLOBALS['TL_DCA'][$table]['list']['operations']['download'] = [
-			'label' => &$GLOBALS['TL_LANG']['MSC']['download'],
-			'href' => 'key=download',
-			'icon' => 'bundles/contaofolderdownload/icons/download.svg',
-		];
-
 		if (Input::get('key') === 'download' && Input::get('id')) {
 			$objFile = FilesModel::findByPath(Input::get('id'));
 			if ($objFile !== null) {
-				if ($objFile->type == 'folder') {
+				if ($objFile->type == 'folder' && BackendUser::getInstance()->hasAccess($objFile->path, 'filemounts')) {
 					$temp = tempnam(sys_get_temp_dir(), 'CFD');
 					$zip = new \ZipArchive();
 					$zip->open($temp, \ZipArchive::CREATE | \ZipArchive::OVERWRITE);
