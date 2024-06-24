@@ -1,6 +1,6 @@
 <?php
 
-namespace Lukasbableck\ContaoFolderDownloadExtension\DependencyInjection;
+namespace Lukasbableck\ContaoFolderDownloadBundle\DependencyInjection;
 
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
