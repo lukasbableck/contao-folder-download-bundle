@@ -3,14 +3,12 @@
 namespace Lukasbableck\ContaoFolderDownloadBundle\EventListener\DataContainer;
 
 use Contao\Backend;
-use Contao\CoreBundle\DependencyInjection\Attribute\AsCallback;
 use Contao\DataContainer;
 use Contao\Image;
 use Contao\StringUtil;
 
-#[AsCallback(table: 'tl_files', target: 'list.operations.download.button')]
 class ButtonListener {
-	public function __invoke(
+	public function onButtonCallback(
 		array $row,
 		?string $href,
 		string $label,
