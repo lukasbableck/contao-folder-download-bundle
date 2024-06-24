@@ -1,0 +1,44 @@
+{
+	"name": "lukasbableck/contao-folder-download-bundle",
+	"type": "contao-bundle",
+	"description": "",
+	"keywords": [
+		"backend",
+		"folder",
+		"download",
+		"contao"
+	],
+	"require": {
+		"contao/core-bundle": "^4.13 || ^5.0"
+	},
+	"license": "LGPL-3.0-or-later",
+	"autoload": {
+		"psr-4": {
+			"Lukasbableck\\ContaoFolderDownloadBundle\\": "src/"
+		}
+	},
+	"authors": [
+		{
+			"name": "Lukas Bableck",
+			"email": "lukas@bableck.dev",
+			"homepage": "https://bableck.dev"
+		}
+	],
+	"conflict": {
+		"contao/manager-plugin": "<2.0 || >=3.0"
+	},
+	"require-dev": {
+		"contao/manager-plugin": "^2.0",
+		"friendsofphp/php-cs-fixer": "^3.59"
+	},
+	"extra": {
+		"contao-manager-plugin": "Lukasbableck\\ContaoFolderDownloadBundle\\ContaoManager\\Plugin"
+	},
+	"config": {
+		"allow-plugins": {
+			"contao-components/installer": true,
+			"php-http/discovery": true,
+			"contao/manager-plugin": true
+		}
+	}
+}
