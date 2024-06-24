@@ -18,7 +18,7 @@ class AddOperationsListener extends Backend {
 		$GLOBALS['TL_DCA'][$table]['list']['operations']['download'] = [
 			'label' => &$GLOBALS['TL_LANG']['MSC']['download'],
 			'href' => 'key=download',
-			'icon' => 'bundles/contaoinstantindexing/icons/google.svg',
+			'icon' => 'bundles/contaofolderdownload/icons/download.svg',
 		];
 
 		if (Input::get('key') === 'download' && Input::get('id')) {
