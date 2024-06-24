@@ -9,6 +9,7 @@
 		"contao"
 	],
 	"require": {
+		"ext-zip": "*",
 		"contao/core-bundle": "^4.13 || ^5.0"
 	},
 	"license": "LGPL-3.0-or-later",
