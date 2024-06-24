@@ -37,6 +37,8 @@ class AddOperationsListener extends Backend {
 							$filePath = $file->getRealPath();
 							$relativePath = substr($filePath, \strlen($projectDir.'/'.$file->path) + 1);
 							$zip->addFile($filePath, $relativePath);
+						}else{
+							$zip->addEmptyDir($file->getRealPath());
 						}
 					}
 					$this->sendFileToBrowser($file->path.'.zip');

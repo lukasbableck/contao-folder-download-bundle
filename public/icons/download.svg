@@ -1,6 +1,30 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg class="lucide lucide-download" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" version="1.1" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-<path d="m19 13v4a2 2 0 0 1-2 2h-14a2 2 0 0 1-2-2v-4" stroke="#4f4f4f"/>
-<polyline transform="translate(-2,-2)" points="7 10 12 15 17 10" fill="#4f4f4f" stroke="#4f4f4f"/>
-<line x1="10" x2="10" y1="13" y2="1" fill="#4f4f4f" stroke="#4f4f4f"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="16"
+   height="16"
+   viewBox="0 0 16 16"
+   fill="none"
+   stroke="#4f4f4f"
+   stroke-width="2"
+   stroke-linecap="round"
+   stroke-linejoin="round"
+   version="1.1"
+   id="svg830"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <path
+     d="m 15.178598,10.385357 v 3.195495 a 1.5977469,1.5977469 0 0 1 -1.597745,1.597745 H 2.3966218 A 1.5977469,1.5977469 0 0 1 0.798875,13.580852 v -3.195495"
+     id="path824"
+     style="stroke-width:1.59775" />
+  <polyline
+     points="7 10 12 15 17 10"
+     id="polyline826"
+     transform="matrix(0.79887346,0,0,0.79887346,-1.5977456,-1.5977454)" />
+  <line
+     x1="7.9887352"
+     x2="7.9887352"
+     y1="10.385358"
+     y2="0.79887497"
+     id="line828"
+     style="stroke-width:1.59775" />
 </svg>
