@@ -1,7 +1,7 @@
 {
 	"name": "lukasbableck/contao-folder-download-bundle",
 	"type": "contao-bundle",
-	"description": "",
+	"description": "This bundle provides a button in the file manager to download folders as ZIP files, similar to the download button for files in the file manager.",
 	"keywords": [
 		"backend",
 		"folder",
