@@ -42,8 +42,6 @@ class AddOperationsListener extends Backend {
 						}
 					}
 					$this->sendFileToBrowser($file->path.'.zip');
-				} elseif ($file->type == 'file') {
-					$this->sendFileToBrowser($file->path);
 				}
 			}
 		}
