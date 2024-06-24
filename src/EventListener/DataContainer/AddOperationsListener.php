@@ -1,6 +1,6 @@
 <?php
 
-namespace LukasBableck\ContaoFolderDownloadBundle\EventListener\DataContainer;
+namespace Lukasbableck\ContaoFolderDownloadBundle\EventListener\DataContainer;
 
 use Contao\Backend;
 use Contao\CoreBundle\DependencyInjection\Attribute\AsHook;
