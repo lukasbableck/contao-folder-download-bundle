@@ -2,7 +2,6 @@
 
 namespace Lukasbableck\ContaoFolderDownloadBundle\EventListener\DataContainer;
 
-use Contao\Backend;
 use Contao\BackendUser;
 use Contao\CoreBundle\DependencyInjection\Attribute\AsHook;
 use Contao\CoreBundle\Exception\ResponseException;
@@ -13,7 +12,7 @@ use Symfony\Component\HttpFoundation\ResponseHeaderBag;
 use Symfony\Component\String\UnicodeString;
 
 #[AsHook('loadDataContainer')]
-class AddOperationsListener extends Backend {
+class AddOperationsListener {
 	public function __invoke(string $table): void {
 		if ($table !== 'tl_files') {
 			return;
